@@ -4,7 +4,7 @@ import time
 import os
 
 DNS_API_URL = "http://api.buss.lol/domains"
-DISCORD_WEBHOOK_URL = "https://discord.com/api/webhooks/1242884854052552724/X0JnYD75_0YP47YJq-bvD_ptMMpM4w10fzNtBLMPTXRDyUjg1Y6-O_iEbWgQyCQ1Bujm"
+DISCORD_WEBHOOK_URL = "no"
 CHECK_INTERVAL = 1
 SEEN_DOMAINS_FILE = "seen_domains.json"
 
