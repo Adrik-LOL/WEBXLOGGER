@@ -5,12 +5,12 @@ import os
 
 DNS_API_URL = "http://api.buss.lol/domains"
 DISCORD_WEBHOOK_URL = "https://discord.com/api/webhooks/1246192222559404194/_6O860oUoZBg7v3FmKC3PdPkWaTsXGqrV8QF3iyU7BpB52pk1Qu2cbNxeRcd-A2777mJ"  # Replace with your actual Discord webhook URL
-CHECK_INTERVAL = 1  # Interval in seconds, set to 60 seconds for practical monitoring
+CHECK_INTERVAL = 1
 SEEN_DOMAINS_FILE = "seen_domains.json"
 
 def fetch_domains():
     response = requests.get(DNS_API_URL)
-    response.raise_for_status()  # Raise an error if the request failed
+    response.raise_for_status()
     return response.json()
 
 def send_discord_message(embed):
